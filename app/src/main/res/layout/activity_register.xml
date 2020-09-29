@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.RegisterActivity"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:background="@drawable/img_background_vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="5dp"
+                android:contentDescription="TODO"
+                android:padding="16dp"
+                android:src="@mipmap/pet_flirt_name" />
+
+            <EditText
+                android:id="@+id/fieldNomeId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName"
+                android:drawableStart="@drawable/ic_person_white_18dp"
+                android:ems="10"
+                android:background="@android:color/transparent"
+                android:drawablePadding="12dp"
+                android:paddingTop="8dp"
+                android:hint="Nome Completo"
+                android:textColorHint="#fff"
+                android:maxLines="1"
+                android:layout_marginTop="40dp"
+                android:drawableLeft="@drawable/ic_person_white_18dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db"/>
+
+            <EditText
+                android:id="@+id/fieldRacaAnimal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress"
+                android:drawableStart="@drawable/ic_email_white_18dp"
+                android:ems="10"
+                android:background="@android:color/transparent"
+                android:drawablePadding="12dp"
+                android:paddingTop="8dp"
+                android:hint="Email"
+                android:textColorHint="#fff"
+                android:maxLines="1"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/ic_email_white_18dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db"/>
+
+            <EditText
+                android:id="@+id/fieldPassId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPassword"
+                android:drawableStart="@drawable/ic_lock_white_18dp"
+                android:ems="10"
+                android:background="@android:color/transparent"
+                android:drawablePadding="12dp"
+                android:paddingTop="8dp"
+                android:hint="Senha"
+                android:textColorHint="#fff"
+                android:maxLines="1"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/ic_lock_white_18dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db"/>
+
+            <EditText
+                android:id="@+id/fieldRePassId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPassword"
+                android:drawableStart="@drawable/ic_lock_white_18dp"
+                android:ems="10"
+                android:background="@android:color/transparent"
+                android:drawablePadding="12dp"
+                android:paddingTop="8dp"
+                android:hint="Re-Senha"
+                android:textColorHint="#fff"
+                android:maxLines="1"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/ic_lock_white_18dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db"/>
+
+            <Button
+                android:id="@+id/buttonRegistrarId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_login"
+                android:text="Cadastrar"
+                android:textColor="#f16f7d"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:padding="16dp"
+                android:clickable="true"
+                style="@style/Base.TextAppearance.AppCompat.Body2"
+                android:layout_marginTop="28dp"/>
+
+            <TextView
+                android:id="@+id/buttonTerms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="By registering, you agree to our Terms and Privacy Policy."
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:textColor="#fff"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:clickable="true" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

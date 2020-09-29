@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@android:color/holo_red_light"
+    android:clipToPadding="false"
+    android:outlineProvider="bounds"
+    android:padding="20sp"
+    android:theme="@style/Theme.AppCompat.Light"
+    tools:context=".view.MainActivity"
+    tools:layout_editor_absoluteX="37dp"
+    tools:layout_editor_absoluteY="25dp"
+    android:id="@+id/nav_about">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#bdbdbd"
+        android:elevation="10dp"
+        app:cardCornerRadius="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+<!--
+            <TextView
+                android:id="@+id/usuNomeId"
+                style="@style/Base.TextAppearance.AppCompat.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/background_login"
+                android:gravity="center|bottom"
+                android:hint="#212121"
+                android:text="Sobre"
+                android:textColor="#212121"
+                android:textColorHint="#212121"
+                android:textSize="36sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Sobre" />
+-->
+            <ScrollView
+                android:id="@+id/scrollView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="432dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="8"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/usuNomeId">
+
+
+                    <TextView
+                        android:id="@+id/sobreConteudo1Id"
+                        style="@style/Base.TextAppearance.AppCompat.Body2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_login"
+                        android:gravity="top|center"
+                        android:text="Sobre"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:text=" Sobre" />
+
+
+                    <TextView
+                        android:id="@+id/sobreConteudoI2d"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/Base.TextAppearance.AppCompat.Body1"
+                        android:textColor="@android:color/black"
+                        android:text="O Pet To Flirt tem como objetivo principal promover o romance entre os pets. O Pet To Flirt se destina àqueles donos de pets que procuram almas gêmeas para seus companheiros de uma forma fácil, rápida, interativa, segura e bem legal. Trazendo conforto e praticidade aos donos o Pet To Flirt busca,  além de uma alma gêmea para seu companheiro, trazer conexões com pessoas que compartilham dos mesmos gostos e dos mesmos interesses que você. Pet To Flirt é puro amor. \n "
+                        android:textSize="16sp"
+                        tools:text="O Pet To Flirt tem como objetivo principal promover o romance entre os pets. O Pet To Flirt se destina àqueles donos de pets que procuram almas gêmeas para seus companheiros de uma forma fácil, rápida, interativa, segura e bem legal.
+Trazendo conforto e praticidade aos donos o Pet To Flirt busca,  além de uma alma gêmea para seu companheiro, trazer conexões com pessoas que compartilham dos mesmos gostos e dos mesmos interesses que você.
+Pet To Flirt é puro amor. \n "  />
+
+
+                    <TextView
+                        android:id="@+id/sobreConteudo3Id"
+                        style="@style/Base.TextAppearance.AppCompat.Body2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_login"
+                        android:gravity="center|top"
+                        android:text="História"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="parent"
+                        tools:text="História" />
+
+                    <TextView
+                        android:id="@+id/sobreConteudo4Id"
+                        style="@style/Base.TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="O Pet To Flirt surgiu quando os idealizadores Bruno Bertolini e Gabriel Ramalho  buscavam um tema para seu trabalho de conclusão de curso (TCC) da faculdade, e Bruno deu a ideia de fazer um projeto onde donos de pets poderiam encontrar pets que seriam os futuros amores de seus companheiros.
+Coincidentemente na época,  Gabriel Ramalho buscava um amor para seu parceiro, o Tobby, um cão da raça Cocker.
+Apaixonados por animais, ambos começaram uma corrida contra o tempo para entregar o seu trabalho e lançar para o mundo sua ideia. \n"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        tools:text="O Pet To Flirt surgiu quando os idealizadores Bruno Bertolini e Gabriel Ramalho  buscavam um tema para seu trabalho de conclusão de curso (TCC) da faculdade, e Bruno deu a ideia de fazer um projeto onde donos de pets poderiam encontrar pets que seriam os futuros amores de seus companheiros.
+Coincidentemente na época,  Gabriel Ramalho buscava um amor para seu parceiro, o Tobby, um cão da raça Cocker.
+Apaixonados por animais, ambos começaram uma corrida contra o tempo para entregar o seu trabalho e lançar para o mundo sua ideia. \n" />
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</android.support.constraint.ConstraintLayout>

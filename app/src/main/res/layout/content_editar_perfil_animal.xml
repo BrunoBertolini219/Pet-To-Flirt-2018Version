@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/editPerfilAnimal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".fragments.EditarPerfilAnimalFragment"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:theme="@style/Theme.AppCompat.Light"
+    android:gravity="center">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/editimgprofileAnimal"
+            android:layout_marginTop="50dp"
+            android:layout_width="150dp"
+            android:layout_height="138dp"
+            android:src="@drawable/petcircle" />
+
+
+        <android.support.design.widget.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/editNameAnimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:hint="Nome"
+        android:maxLines="1"
+        android:textColor="#212121"
+        android:textColorHint="#424242"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</android.support.design.widget.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="start"
+        android:theme="@style/Theme.AppCompat.Light">
+
+
+
+        <Spinner
+            android:id="@+id/spinnerTipoEditId"
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_gravity="center"
+            android:drawablePadding="12dp"
+            android:gravity="center"
+            android:hint="@string/qual_animal"
+            android:theme="@style/AppTheme.PopupOverlay"
+            android:layout_marginLeft="32dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#616161"
+            android:layout_marginEnd="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginStart="32dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerRacaEditId"
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_gravity="center"
+            android:drawablePadding="12dp"
+            android:gravity="center"
+            android:hint="@string/qual_ra_a"
+            android:theme="@style/AppTheme.PopupOverlay"
+            android:popupTheme="@style/AppTheme.PopupOverlay"
+            android:layout_marginLeft="32dp"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginStart="32dp"
+            android:background="#616161" />
+
+
+
+        <RadioGroup
+            android:id="@+id/radioGroupSexoEditId"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_marginEnd="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginStart="32dp">
+
+            <RadioButton
+                android:id="@+id/radioMachoEditId"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Macho"
+                android:textColor="#212121"
+                android:textSize="17dp" />
+
+            <RadioButton
+                android:id="@+id/radioFemeaEditId"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Fêmea"
+
+                android:textSize="17dp" />
+        </RadioGroup>
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginStart="32dp"
+            android:background="#616161"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fieldCorAnimal" />
+
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/editCorAnimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/ic_menu_manage"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_menu_send"
+                android:hint="Cor"
+                android:maxLines="1"
+                android:textColor="#212121"
+                android:textColorHint="#424242"
+                android:textSize="15dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/editIdadeAnimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/ic_email_white_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_date_range"
+                android:hint="Idade"
+                android:maxLines="1"
+                android:textColor="#212121"
+                android:textColorHint="#424242"
+                android:textSize="15dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTelefoneId">
+
+        <Button
+            android:id="@+id/buttonSalvarAnimalId"
+            style="@style/Base.TextAppearance.AppCompat.Body1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_salvar"
+            android:clickable="true"
+            android:padding="14dp"
+            android:text="Salvar"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonCancelarAnimalId"
+            style="@style/Base.TextAppearance.AppCompat.Body1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_signup"
+            android:clickable="true"
+            android:padding="14dp"
+            android:text="Cancelar"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+</FrameLayout>

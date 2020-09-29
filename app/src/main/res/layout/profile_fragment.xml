@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ProfileFragment"
+    android:id="@+id/profile_animal_id">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constrant"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible">
+
+
+                <ImageView
+                    android:id="@+id/imgbackgroundid"
+                    android:layout_width="0dp"
+                    android:layout_height="182dp"
+                    android:scaleType="centerCrop"
+                    android:src="@android:color/holo_red_light"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgprofileAnimal"
+                    android:layout_width="112dp"
+                    android:layout_height="112dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/imagemusuario"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgbackgroundid"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.062"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imgbackgroundid" />
+
+                <TextView
+                    android:id="@+id/fieldTelefoneId"
+                    android:layout_width="0dp"
+                    android:layout_height="23dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="24dp"
+                    android:drawablePadding="13dp"
+                    android:drawableLeft="@drawable/ic_email_white_18dp"
+                    android:drawableStart="@drawable/ic_settings_phone"
+                    android:maxLines="1"
+                    android:hint="Telefone"
+                    android:textColor="#212121"
+                    android:textColorHint="#424242"
+                    android:textSize="15dp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/fieldSexoAnimal"
+                    android:layout_width="0dp"
+                    android:layout_height="23dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="24dp"
+                    android:drawableLeft="@drawable/ic_wc"
+                    android:drawablePadding="13dp"
+                    android:drawableStart="@drawable/ic_wc"
+                    android:maxLines="1"
+                    android:hint="Sexo"
+                    android:textColorHint="#424242"
+                    android:textColor="#212121"
+                    android:textSize="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+                <TextView
+                    android:id="@+id/fieldCorAnimal"
+                    android:layout_width="0dp"
+                    android:layout_height="23dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="24dp"
+                    android:drawableLeft="@drawable/ic_menu_manage"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_menu_send"
+                    android:maxLines="1"
+                    android:hint="Endereço"
+                    android:textColorHint="#424242"
+                    android:textColor="#212121"
+                    android:textSize="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+                <TextView
+                    android:id="@+id/fieldNameAnimal"
+                    android:layout_width="0dp"
+                    android:layout_height="23dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="4dp"
+                    android:hint="Nome"
+                    android:maxLines="1"
+                    android:textColorHint="#424242"
+                    android:textColor="#212121"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imgprofileAnimal"
+                    app:layout_constraintTop_toBottomOf="@+id/imgbackgroundid" />
+
+
+                <TextView
+                    android:id="@+id/fieldIdadeAnimal"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="24dp"
+                    android:drawableLeft="@drawable/ic_email_white_18dp"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_date_range"
+                    android:enabled="false"
+                    android:hint="Idade"
+                    android:maxLines="1"
+                    android:textColor="#212121"
+                    android:textColorHint="#424242"
+                    android:textSize="15dp"
+                    android:textStyle=""
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fieldSexoAnimal" />
+
+                <TextView
+                    android:id="@+id/fieldRacaAnimal"
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="44dp"
+                    android:drawableLeft="@drawable/ic_email"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_email"
+                    android:maxLines="1"
+                    android:hint="Email"
+                    android:textColorHint="#424242"
+                    android:textColor="#212121"
+                    android:textSize="15dp"
+                    android:textStyle=""
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imgprofileAnimal" />
+
+
+                <View
+                    android:id="@+id/view4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginStart="32dp"
+                    android:background="#000000"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fieldRacaAnimal" />
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginStart="32dp"
+                    android:background="#000000"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fieldSexoAnimal" />
+
+                <View
+                    android:id="@+id/view5"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginStart="32dp"
+                    android:background="#000000"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fieldTelefoneId" />
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginStart="32dp"
+                    android:background="#000000"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fieldCorAnimal" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginStart="32dp"
+                    android:background="#000000"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fieldIdadeAnimal" />
+
+                <ImageView
+                    android:id="@+id/editImgAnimal"
+                    android:layout_width="46dp"
+                    android:layout_height="42dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginTop="24dp"
+                    android:src="@drawable/ic_action_edit"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constrantEdit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+
+                <ImageView
+                    android:id="@+id/imgbackgroundidEdit"
+                    android:layout_width="0dp"
+                    android:layout_height="182dp"
+                    android:scaleType="centerCrop"
+                    android:src="@android:color/holo_red_light"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgprofileidEdit"
+                    android:layout_width="112dp"
+                    android:layout_height="112dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/imagemadd"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgbackgroundidEdit"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.062"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imgbackgroundidEdit" />
+
+
+                <EditText
+                    android:id="@+id/editSexoId"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="12dp"
+                    android:drawablePadding="13dp"
+                    android:drawableLeft="@drawable/ic_wc"
+                    android:drawableStart="@drawable/ic_wc"
+                    android:hint="Sexo"
+                    android:maxLines="1"
+                    android:textColor="#212121"
+                    android:textSize="15dp"
+                    android:singleLine="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editEnderecoid" />
+
+                <EditText
+                    android:id="@+id/editEnderecoid"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="20dp"
+                    android:singleLine="true"
+                    android:inputType="text"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/ic_menu_manage"
+                    android:drawableStart="@drawable/ic_menu_send"
+                    android:hint="Endereço"
+                    android:maxLines="1"
+                    android:textColor="#212121"
+                    android:textSize="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imgprofileidEdit" />
+
+                <EditText
+                    android:id="@+id/editNameid"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:singleLine="true"
+                    android:inputType="textPersonName"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="4dp"
+                    android:hint="Nome"
+                    android:maxLines="1"
+                    android:textColor="#000000"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imgprofileidEdit"
+                    app:layout_constraintTop_toBottomOf="@+id/imgbackgroundidEdit" />
+
+
+                <EditText
+                    android:id="@+id/editIdadeId"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="12dp"
+                    android:drawableLeft="@drawable/ic_email_white_18dp"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_date_range"
+                    android:hint="Idade"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:textColor="#212121"
+                    android:textSize="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editSexoId" />
+
+                <EditText
+                    android:id="@+id/editTelefoneId"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="12dp"
+                    android:drawableLeft="@drawable/ic_email"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_settings_phone"
+                    android:hint="Telefone (Opcional)"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:textColor="#212121"
+                    android:textSize="15dp"
+                    android:textStyle=""
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editIdadeId" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="24dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTelefoneId">
+
+                    <Button
+                        android:id="@+id/buttonSalvarId"
+                        style="@style/Base.TextAppearance.AppCompat.Body1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_salvar"
+                        android:clickable="true"
+                        android:padding="14dp"
+                        android:text="Salvar"
+                        android:textAllCaps="false"
+                        android:textColor="#fff"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/buttonCancelarId"
+                        style="@style/Base.TextAppearance.AppCompat.Body1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_signup"
+                        android:clickable="true"
+                        android:padding="14dp"
+                        android:text="Cancelar"
+                        android:textAllCaps="false"
+                        android:textColor="#fff"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+
+            </android.support.constraint.ConstraintLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</FrameLayout>

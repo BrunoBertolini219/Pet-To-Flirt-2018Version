@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_animal"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Meus Animais" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_account_box"
+            android:title="Perfil" />
+        <item
+            android:id="@+id/nav_messenger"
+            android:icon="@drawable/ic_chat"
+            android:title="Messenger" />
+        <item
+            android:id="@+id/nav_sobre"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Sobre" />
+    </group>
+
+    <item android:title="Comunicação">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Compartilhar" />
+
+        </menu>
+    </item>
+
+</menu>

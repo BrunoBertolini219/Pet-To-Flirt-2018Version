@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "402204806303",
+    "firebase_url": "https://petd-ec389.firebaseio.com",
+    "project_id": "petd-ec389",
+    "storage_bucket": "petd-ec389.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:402204806303:android:9d6b85da31f72047",
+        "android_client_info": {
+          "package_name": "com.tcc.bruno.loginactivity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "402204806303-trlgj5osbfdfvhrck9kneu22v36jfuk8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tcc.bruno.loginactivity",
+            "certificate_hash": "e21add7400b809c6d4ab0901321fc680cf07c3c8"
+          }
+        },
+        {
+          "client_id": "402204806303-289ff0ijmo3nkbbe7vtvlggpa8r011sn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7Kn-G-fTw-y_3yfb2ziXax-7XrdZVcVE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "402204806303-289ff0ijmo3nkbbe7vtvlggpa8r011sn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

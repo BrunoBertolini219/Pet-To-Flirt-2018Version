@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.PerfilAnimalFragment"
+    android:background="@android:color/white"
+    android:id="@+id/nav_regianimal">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constrant"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+
+            <ImageView
+                android:id="@+id/imgBackgroundAnimal"
+                android:layout_width="0dp"
+                android:layout_height="182dp"
+                android:scaleType="centerCrop"
+                android:background="#E53935"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgprofileAnimal"
+                android:layout_width="112dp"
+                android:layout_height="112dp"
+                android:src="@drawable/petcircle"
+                app:layout_constraintBottom_toBottomOf="@+id/imgBackgroundAnimal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgBackgroundAnimal" />
+
+
+            <TextView
+                android:id="@+id/fieldSexoAnimal"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:drawableLeft="@drawable/ic_action_yinyang"
+                android:drawablePadding="8dp"
+                android:drawableStart="@drawable/ic_action_yinyang"
+                android:hint="Sexo"
+                android:maxLines="1"
+                android:textColor="#212121"
+                android:textColorHint="#424242"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fieldRacaAnimal" />
+
+            <TextView
+                android:id="@+id/fieldNameAnimal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:hint="Nome"
+                android:maxLines="1"
+                android:textColor="#212121"
+                android:textColorHint="#424242"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgprofileAnimal" />
+
+
+            <TextView
+                android:id="@+id/fieldRacaAnimal"
+                android:layout_width="0dp"
+                android:layout_height="27dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:drawableLeft="@drawable/ic_pets_black"
+                android:drawablePadding="12dp"
+                android:drawableStart="@drawable/ic_pets_black"
+                android:hint="Raça"
+                android:maxLines="1"
+                android:text="Raça"
+                android:textColor="#212121"
+                android:textColorHint="#424242"
+                android:textSize="15dp"
+                android:textStyle=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+            <TextView
+                android:id="@+id/fieldIdadeAnimal"
+                android:layout_width="0dp"
+                android:layout_height="22dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:drawableLeft="@drawable/ic_email_white_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_date_range"
+                android:enabled="false"
+                android:hint="Idade"
+                android:maxLines="1"
+                android:textColor="#212121"
+                android:textColorHint="#424242"
+                android:textSize="15dp"
+                android:textStyle=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fieldCorAnimal" />
+
+            <ImageView
+                android:id="@+id/editImagePerfilAnimal"
+                android:layout_width="35dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="80dp"
+                android:alpha="0.5"
+                android:background="@android:color/white"
+                android:src="@drawable/ic_camera_enhance"
+                app:layout_constraintEnd_toEndOf="@+id/imgprofileAnimal"
+                app:layout_constraintTop_toTopOf="@+id/imgprofileAnimal" />
+
+            <TextView
+                android:id="@+id/fieldCorAnimal"
+                android:layout_width="0dp"
+                android:layout_height="23dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:drawableLeft="@drawable/ic_menu_manage"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_menu_send"
+                android:hint="Cor"
+                android:maxLines="1"
+                android:text="Cor"
+                android:textColor="#212121"
+                android:textColorHint="#424242"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fieldSexoAnimal" />
+
+            <TextView
+                android:id="@+id/editImgAnimal"
+                android:layout_width="131dp"
+                android:layout_height="34dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="16dp"
+                android:background="#E53935"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/ic_action_edit"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="Editar Perfil"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="24dp"
+
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/fieldNameAnimal"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp">
+
+
+                <ImageView
+                    android:id="@+id/imageanimal01"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/add_photo" />
+
+                <ImageView
+                    android:id="@+id/imageanimal02"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/add_photo" />
+
+                <ImageView
+                    android:id="@+id/imageanimal03"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/add_photo" />
+
+
+            </LinearLayout>
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+</FrameLayout>

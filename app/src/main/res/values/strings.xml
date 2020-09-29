@@ -1,0 +1,319 @@
+<resources>
+    <string name="app_name">Petmate</string>
+    <string name="title_activity_main">PetFlirt</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">PetFlirt</string>
+    <string name="nav_header_subtitle">Find the best to the best</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="modelo_fragment">Fragmento Modelo</string>
+    <string name="title_activity_my_animal">MyAnimalActivity</string>
+    <string name="AnimalsFrag">animalsfrag</string>
+    <string name="perfilanimals">perfil_animal</string>
+    <string name="Perfil_animal">perfilanimal</string>
+    <string name="Home">home</string>
+    <string name="Profile">profile</string>
+    <string name="Myanimals">myanimals</string>
+    <string name="messenger_fragment">messenger</string>
+    <string name="register_animal">register Animal</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_world">hello</string>
+    <string name="todo">TODO</string>
+    <string name="register">Register</string>
+
+    <string-array name="Tipo_Animais">
+        <item>Qual é o seu animal?</item>
+        <item>Cachorro</item>
+        <item>Gato</item>
+    </string-array>
+
+
+    <string-array name="Raca_Cachorro">
+        <item>Qual a raça do seu cachorro?</item>
+        <item>	Affenpinscher	</item>
+        <item>	Afghan Hound	</item>
+        <item>	Airedale Terrier	</item>
+        <item>	Akita	</item>
+        <item>	Akita Americano	</item>
+        <item>	American Pit Bull Terrier	</item>
+        <item>	American Staffordshire Terrier	</item>
+        <item>	Australian Shepherd	</item>
+        <item>	Basenji	</item>
+        <item>	Basset Fulvo da Bretanha	</item>
+        <item>	Basset Hound	</item>
+        <item>	Beagle	</item>
+        <item>	Beagle-Harrier	</item>
+        <item>	Bearded Collie	</item>
+        <item>	Bedlington Terrier	</item>
+        <item>	Bernese Mountain Dog	</item>
+        <item>	Bichon Bolonhês	</item>
+        <item>	Bichon Frisé	</item>
+        <item>	Bichon Havanês	</item>
+        <item>	Boerboel	</item>
+        <item>	Boiadeiro de Entlebuch	</item>
+        <item>	Border Collie	</item>
+        <item>	Border Terrier	</item>
+        <item>	Borzoi	</item>
+        <item>	Boston Terrier	</item>
+        <item>	Bouvier de Flandres	</item>
+        <item>	Boxer	</item>
+        <item>	Braco Alemão Pelo Curto	</item>
+        <item>	Braco Alemão Pelo Duro	</item>
+        <item>	Braco Italiano	</item>
+        <item>	Buldogue Americano	</item>
+        <item>	Buldogue Francês	</item>
+        <item>	Buldogue Inglês	</item>
+        <item>	Bull Terrier	</item>
+        <item>	Bullmastiff	</item>
+        <item>	Cairn Terrier	</item>
+        <item>	Cane Corso	</item>
+        <item>	Cão de Crista Chinês	</item>
+        <item>	Cão de Santo Humberto	</item>
+        <item>	Cão D’água Espanhol	</item>
+        <item>	Cão D’água Português	</item>
+        <item>	Cão Lobo Checoslovaco	</item>
+        <item>	Cão Pelado Mexicano	</item>
+        <item>	Cão Pelado Peruano	</item>
+        <item>	Cavalier King Charles Spaniel	</item>
+        <item>	Cesky Terrier	</item>
+        <item>	Chesapeake Bay Retriever	</item>
+        <item>	Chihuahua	</item>
+        <item>	Chin	</item>
+        <item>	Chow-chow Pelo Curto	</item>
+        <item>	Chow-chow Pelo Longo	</item>
+        <item>	Cirneco do Etna	</item>
+        <item>	Clumber Spaniel	</item>
+        <item>	Cocker Spaniel Americano	</item>
+        <item>	Cocker Spaniel Inglês	</item>
+        <item>	Collie pelo longo	</item>
+        <item>	Coton de Tulear	</item>
+        <item>	Dachshund Teckel - Pelo Curto	</item>
+        <item>	Dálmata	</item>
+        <item>	Dandie Dinmont Terrier	</item>
+        <item>	Dobermann	</item>
+        <item>	Dogo Argentino	</item>
+        <item>	Dogo Canário	</item>
+        <item>	Dogue Alemão	</item>
+        <item>	Dogue de Bordeaux	</item>
+        <item>	Elkhound Norueguês Cinza	</item>
+        <item>	Fila Brasileiro	</item>
+        <item>	Flat-Coated Retriever	</item>
+        <item>	Fox Terrier Pelo Duro 	</item>
+        <item>	Fox Terrier Pelo Liso	</item>
+        <item>	Foxhound Inglês	</item>
+        <item>	Galgo Espanhol	</item>
+        <item>	Golden Retriever	</item>
+        <item>	Grande Münsterländer	</item>
+        <item>	Greyhound	</item>
+        <item>	Griffon Belga	</item>
+        <item>	Griffon de Bruxelas	</item>
+        <item>	Husky Siberiano	</item>
+        <item>	Ibizan Hound	</item>
+        <item>	Irish Soft Coated Wheaten Terrier	</item>
+        <item>	Irish Wolfhound	</item>
+        <item>	Jack Russell Terrier	</item>
+        <item>	Kerry Blue Terrier	</item>
+        <item>	Komondor	</item>
+        <item>	Kuvasz	</item>
+        <item>	Labrador Retriever	</item>
+        <item>	Lagotto Romagnolo	</item>
+        <item>	Lakeland Terrier	</item>
+        <item>	Leonberger	</item>
+        <item>	Lhasa Apso	</item>
+        <item>	Malamute do Alasca	</item>
+        <item>	Maltês	</item>
+        <item>	Mastiff	</item>
+        <item>	Mastim Espanhol	</item>
+        <item>	Mastino Napoletano	</item>
+        <item>	Mudi	</item>
+        <item>	Nordic Spitz	</item>
+        <item>	Norfolk Terrier	</item>
+        <item>	Norwich Terrier	</item>
+        <item>	Old English Sheepdog	</item>
+        <item>	Papillon	</item>
+        <item>	Parson Russell Terrier	</item>
+        <item>	Pastor Alemão	</item>
+        <item>	Pastor Beauceron	</item>
+        <item>	Pastor Belga	</item>
+        <item>	Pastor Bergamasco	</item>
+        <item>	Pastor Branco Suíço	</item>
+        <item>	Pastor Briard	</item>
+        <item>	Pastor da Ásia Central	</item>
+        <item>	Pastor de Shetland	</item>
+        <item>	Pastor dos Pirineus	</item>
+        <item>	Pastor Maremano Abruzês	</item>
+        <item>	Pastor Polonês	</item>
+        <item>	Pastor Polonês da Planície	</item>
+        <item>	Pequeno Basset Griffon da Vendéia	</item>
+        <item>	Pequeno Cão Leão	</item>
+        <item>	Pequeno Lebrel Italiano	</item>
+        <item>	Pequinês	</item>
+        <item>	Perdigueiro Português	</item>
+        <item>	Petit Brabançon	</item>
+        <item>	Pharaoh Hound	</item>
+        <item>	Pinscher Miniatura	</item>
+        <item>	Podengo Canário	</item>
+        <item>	Podengo Português	</item>
+        <item>	Pointer Inglês	</item>
+        <item>	Poodle Anão	</item>
+        <item>	Poodle Médio	</item>
+        <item>	Poodle Standard	</item>
+        <item>	Poodle Toy	</item>
+        <item>	Pug	</item>
+        <item>	Puli	</item>
+        <item>	Pumi	</item>
+        <item>	Rhodesian Ridgeback	</item>
+        <item>	Rottweiler	</item>
+        <item>	Saluki	</item>
+        <item>	Samoieda	</item>
+        <item>	São Bernardo	</item>
+        <item>	Schipperke	</item>
+        <item>	Schnauzer	</item>
+        <item>	Schnauzer Gigante	</item>
+        <item>	Schnauzer Miniatura	</item>
+        <item>	Scottish Terrier	</item>
+        <item>	Sealyham Terrier	</item>
+        <item>	Setter Gordon	</item>
+        <item>	Setter Inglês	</item>
+        <item>	Setter Irlandês Vermelho	</item>
+        <item>	Setter Irlandês Vermelho e Branco	</item>
+        <item>	Shar-pei	</item>
+        <item>	Shiba	</item>
+        <item>	Shih-Tzu	</item>
+        <item>	Silky Terrier Australiano	</item>
+        <item>	Skye Terrier	</item>
+        <item>	Smoushond Holandês	</item>
+        <item>	Spaniel Bretão	</item>
+        <item>	Spinone Italiano	</item>
+        <item>	Spitz Alemão Anão	</item>
+        <item>	Spitz Finlandês	</item>
+        <item>	Spitz Japonês Anão	</item>
+        <item>	Springer Spaniel Inglês	</item>
+        <item>	Stabyhoun	</item>
+        <item>	Staffordshire Bull Terrier	</item>
+        <item>	Terra Nova	</item>
+        <item>	Terrier Alemão de caça Jagd	</item>
+        <item>	Terrier Brasileiro	</item>
+        <item>	Terrier Irlandês de Glen do Imaal	</item>
+        <item>	Terrier Preto da Rússia	</item>
+        <item>	Tibetan Terrier	</item>
+        <item>	Tosa Inu	</item>
+        <item>	Vira-Latas	</item>
+        <item>	Vizsla	</item>
+        <item>	Volpino Italiano	</item>
+        <item>	Weimaraner	</item>
+        <item>	Welsh Corgi Cardigan	</item>
+        <item>	Welsh Corgi Pembroke	</item>
+        <item>	Welsh Springer Spaniel	</item>
+        <item>	Welsh Terrier	</item>
+        <item>	West Highland White Terrier	</item>
+        <item>	Whippet	</item>
+        <item>	Yorkshire Terrier	</item>
+
+    </string-array>
+
+
+    <string-array name="Raca_Gato">
+        <item>Qual a raça do seu gato?</item>
+        <item>	Abyssinian	</item>
+        <item>	American Bobtail Longhair	</item>
+        <item>	American Bobtail Shorthair	</item>
+        <item>	American Shorthair	</item>
+        <item>	American Wirehair	</item>
+        <item>	Arabian Mau	</item>
+        <item>	Asian Semi-long Hair	</item>
+        <item>	Australian Mist	</item>
+        <item>	Bengal	</item>
+        <item>	Bobtail Japonês	</item>
+        <item>	Bombaim	</item>
+        <item>	Brazilian Shorthair	</item>
+        <item>	British Longhair	</item>
+        <item>	Burmês	</item>
+        <item>	California Spangled Cat	</item>
+        <item>	Chausie	</item>
+        <item>	Cornish Rex	</item>
+        <item>	Curl Americano Pelo Curto	</item>
+        <item>	Curl Americano Pelo Longo	</item>
+        <item>	Cymric	</item>
+        <item>	Devon Rex	</item>
+        <item>	Domestic Long-Haired	</item>
+        <item>	Domestic Short-Haired	</item>
+        <item>	Don Sphynx	</item>
+        <item>	Egyptian Mau	</item>
+        <item>	European	</item>
+        <item>	Exotic Shorthair	</item>
+        <item>	German Rex	</item>
+        <item>	Havana	</item>
+        <item>	Himalaio	</item>
+        <item>	Khao Manee	</item>
+        <item>	Korat	</item>
+        <item>	Kurilian Bobtail Longhair	</item>
+        <item>	Kurilian Bobtail Shorthair	</item>
+        <item>	LaPerm Longhair	</item>
+        <item>	LaPerm Shorthair	</item>
+        <item>	Maine Coon	</item>
+        <item>	Manx	</item>
+        <item>	Mekong Bobtail	</item>
+        <item>	Munchkin Longhair	</item>
+        <item>	Munchkin Shorthair	</item>
+        <item>	Nebelung	</item>
+        <item>	Norwegian Forest Cat	</item>
+        <item>	Ocicat	</item>
+        <item>	Ojos Azules Shorthair	</item>
+        <item>	Oriental Longhair	</item>
+        <item>	Oriental Shorthair	</item>
+        <item>	Persa	</item>
+        <item>	Peterbald	</item>
+        <item>	Pixiebob Longhair	</item>
+        <item>	Pixiebob Shorthair	</item>
+        <item>	Ragamuffin	</item>
+        <item>	Ragdoll	</item>
+        <item>	Russo Azul	</item>
+        <item>	Sagrado da Birmânia	</item>
+        <item>	Savannah Cat	</item>
+        <item>	Scottish Fold	</item>
+        <item>	Selkirk Rex Longhair	</item>
+        <item>	Selkirk Rex Shorthair	</item>
+        <item>	Serengeti	</item>
+        <item>	Siamês	</item>
+        <item>	Siberian	</item>
+        <item>	Singapura	</item>
+        <item>	Snowshoe	</item>
+        <item>	Sokoke	</item>
+        <item>	Somali	</item>
+        <item>	Sphynx	</item>
+        <item>	Thai	</item>
+        <item>	Tonkinese Shorthair	</item>
+        <item>	Toyger	</item>
+        <item>	Turkish Angorá	</item>
+        <item>	Turkish Van	</item>
+        <item>	York Chocolate	</item>
+
+    </string-array>
+
+    <string-array name="Raca_Passaro">
+        <item>Qual a raça do seu pássaro?</item>
+        <item>passaro</item>
+    </string-array>
+    <string name="title_activity_editar_perfil_animal">EditarPerfilAnimalActivity</string>
+    <string name="qual_animal">Qual animal?</string>
+    <string name="qual_ra_a">Qual Raça?</string>
+
+    <string-array name="Quilometros_usuario">
+        <item>2 Quilômetros</item>
+        <item>5 Quilômetros</item>
+        <item>10 Quilômetros</item>
+        <item>50 Quilômetros</item>
+        <item>100 Quilômetros</item>
+        <item>250 Quilômetros</item>
+        <item>1000 Quilômetros</item>
+        <item>Todo Território</item>
+    </string-array>
+
+</resources>

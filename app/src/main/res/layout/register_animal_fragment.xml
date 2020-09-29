@@ -1,0 +1,190 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.RegisterAnimalFragment"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:background="@drawable/img_background_vertical"
+    android:theme="@style/AppTheme.PopupOverlay"
+    android:id="@+id/register_animal_frag">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:theme="@style/AppTheme.PopupOverlay">
+
+            <ImageView
+                android:id="@+id/imgperfilId"
+                android:layout_width="200dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:contentDescription="TODO"
+
+                android:padding="16dp"
+                android:src="@mipmap/pet_flirt_name" />
+
+            <EditText
+                android:id="@+id/fieldNomeAnimalId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/ic_pets"
+                android:drawablePadding="12dp"
+                android:drawableStart="@drawable/ic_pets"
+                android:ems="10"
+                android:hint="Nome"
+                android:textColor="@android:color/white"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:paddingTop="8dp"
+                android:textColorHint="#fff" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db" />
+
+            <EditText
+                android:id="@+id/fieldIdadeAnimalId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/ic_cake"
+                android:drawablePadding="12dp"
+                android:drawableStart="@drawable/ic_cake"
+                android:ems="10"
+                android:textColor="@android:color/white"
+                android:hint="Idade"
+                android:inputType="number"
+                android:maxLines="1"
+                android:paddingTop="8dp"
+                android:textColorHint="#fff" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupSexoId"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioMachoId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:shadowColor="#ffffff"
+                    android:text="Macho"
+                    android:textColor="#ffffff"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioFemeaId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:shadowColor="#ffffff"
+                    android:text="Fêmea"
+                    android:textColor="#ffffff"
+                    android:textSize="17dp" />
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db" />
+
+            <EditText
+                android:id="@+id/fieldCorId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/ic_invert_colors"
+                android:drawablePadding="12dp"
+                android:textColor="@android:color/white"
+                android:drawableStart="@drawable/ic_invert_colors"
+                android:ems="10"
+                android:hint="Cor"
+                android:inputType="textNoSuggestions"
+                android:maxLines="1"
+                android:paddingTop="8dp"
+                android:textColorHint="#fff"
+                android:theme="@style/AppTheme.PopupOverlay"/>
+
+            <Spinner
+                android:id="@+id/spinnerTipoId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:drawablePadding="12dp"
+                android:gravity="center"
+                android:hint="Qual animal?"
+                android:theme="@style/AppTheme.AppBarOverlay" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db" />
+
+
+            <Spinner
+                android:id="@+id/spinnerRacaId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:drawablePadding="12dp"
+                android:gravity="center"
+                android:hint="Qual Raça?"
+                android:theme="@style/AppTheme.PopupOverlay" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db" />
+
+
+            <Button
+                android:id="@+id/cadAnimalId"
+                style="@style/Base.TextAppearance.AppCompat.Body2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/background_login"
+                android:clickable="true"
+                android:padding="16dp"
+                android:text="Proximo passo"
+                android:textAllCaps="false"
+                android:textColor="#424242"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
